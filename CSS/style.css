@@ -204,4 +204,13 @@ header {
         width: 124px;
        height: 124px;
     }
+    .tab label {
+    padding: 15px 25px;
+}
+.tab label:hover{
+  padding: 22px 25px;
+}
+[type=radio]:checked ~ label {
+  padding: 22px 25px; 
+}
 }
