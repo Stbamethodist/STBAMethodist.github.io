@@ -1,1 +1,0 @@
-# stbamethodist.github.io

@@ -5,7 +5,10 @@
     margin: 0;
     padding: 0;
 }
-body{
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial;
     background-image: linear-gradient(to right, #f7fbff, #ebf5ff, #ebf5ff, #f7fbff);
 }
 button {
@@ -35,6 +38,7 @@ header {
 .logo {
     cursor: pointer;
     margin-right: auto;
+/*buttons */
 }
 .nav_links {
     list-style: none;
@@ -50,16 +54,154 @@ header {
 .nav_links li a:hover {
     color: #74a0cf;
 }
-button {
+.cta button{
     padding: 9px 23px;
     background-color: #1860af;
     border: none;
-    border-radius: 50px;
     cursor: pointer;
+    border-radius: 50px;
     transition: all 0.3s ease 0s;
 }
-button:hover {
+.cta button:hover {
     background-color: #86b0d9
 }
-/*end of Header */
+/*end of buttons */
+.tabs {
+    position: relative;   
+    min-height: 200px; /* This part sucks */
+    clear: both;
+    margin: 120px 0;
+    text-align: center;
+    width: 100%
+  }
+  .tab {
+    float: none;
+    display: inline-block
+  }
+  .tab label {
+    background: white; 
+    padding: 20px 50px; 
+    border: none; 
+    margin-left: 0px; 
+    position: relative;
+    left: 0px; 
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0,0.3);
+    font-family: "Roboto", sans-serif;
+    color: #3c8cf0;
+    transition: all 0.3s ease 0s;
+  }
+  .tab label:hover{
+    background-image: url(../Images/label.png);
+    background-repeat: no-repeat;
+    padding: 25px 50px;
+    color: white;
+    background-size: cover;
+    margin: auto;
+    width: 50%;
+  }
+  .tab [type=radio] {
+    display: none;   
+  }
+  .content {
+    position: absolute;
+    top: 35px;
+    left: 0;
+    background: white;
+    right: 0;
+    bottom: -100;
+    padding: 20px;
+    border-top: 5px solid #3c8cf0; 
+    text-align: left
+  }
+  [type=radio]:checked ~ label {
+    padding: 25px 50px; 
+    background-image: url(../Images/label.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    margin: auto;
+    width: 50%;
+  }
+  [type=radio]:checked ~ label ~ .content {
+    z-index: 1;
+  }
 /*Selection*/
+.opt{
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    width: 75%;
+    margin-top: 5%;
+    align-items: center;
+  }
+.jp{
+    background-image: url('../img/japan.png');
+    width: 350px;
+    height: 350px;
+    background-size: cover;
+    border-radius : 10px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0,0.3);
+    
+}
+.ing{
+    background-image: url('../img/Mandarin.png');
+    width: 350px;
+    height: 350px;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0,0.3);
+
+}
+.kurjp{
+    background-image: url('../img/Mandarin.png');
+    width: 350px;
+    height: 350px;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0,0.3);
+}
+/*Screensize*/
+@media(max-width: 1500px) {
+    .opt{
+        margin-top: 10%;
+        width: 100%;
+    }
+    .jp{
+       display: inline-block; 
+       width: 300px;
+       height: 300px;
+    }
+    .ing{
+        display: inline-block;
+        width: 300px;
+       height: 300px;
+    }
+    
+    .kurjp{
+        display: inline-block;
+        width: 300px;
+       height: 300px;
+    }
+}
+@media (orientation: portrait){
+    .opt{
+        margin-top: 20%;
+        width: 100%;
+    }
+    .jp{
+       display: inline-block; 
+       width: 124px;
+       height: 124px;
+    }
+    .ing{
+        display: inline-block;
+        width: 124px;
+       height: 124px;
+    }
+    
+    .kurjp{
+        display: inline-block;
+        width: 124px;
+       height: 124px;
+    }
+}
