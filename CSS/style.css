@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Rubik&display=swap');
 
 * {
     box-sizing: border-box;
@@ -9,7 +10,7 @@ body, html {
     height: 100%;
     margin: 0;
     font-family: Arial;
-    background-image: linear-gradient(to right, #f7fbff, #ebf5ff, #ebf5ff, #f7fbff);
+    background-image: linear-gradient(to right, #f7fbff, #ebf5ff, #ebf5ff, #f7fbff);    
 }
 button {
     font-family: "Roboto", sans-serif;
@@ -18,12 +19,10 @@ button {
     color: white;
     text-decoration: none;
 }
-li, a {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: #1860af;
-    text-decoration: none;
+/*Header*/
+.logo {
+    cursor: pointer;
+    margin-right: auto;
 }
 header {
     height: 100px;
@@ -33,28 +32,8 @@ header {
     padding: 30px 18px;
     background-color: #ffffff;
     box-shadow: 0 -6px 10px 5px rgba(0,0,0,0.5);
-    
 }
-.logo {
-    cursor: pointer;
-    margin-right: auto;
-/*buttons */
-}
-.nav_links {
-    list-style: none;
-    color: #1860af;
-}
-.nav_links li{
-    display: inline-block;
-    padding: 0px 9px;
-}
-.nav_links li a {
-    transition: all 0.3s ease 0s;
-}
-.nav_links li a:hover {
-    color: #74a0cf;
-}
-.cta button{
+.topbot button{
     padding: 9px 23px;
     background-color: #1860af;
     border: none;
@@ -62,15 +41,61 @@ header {
     border-radius: 50px;
     transition: all 0.3s ease 0s;
 }
-.cta button:hover {
+.topbot button:hover {
     background-color: #86b0d9
 }
-/*end of buttons */
+/*Selection*/
+.opt{
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    width: 75%;
+    margin-top: 2%;
+    align-items: center;
+  }
+.jp{
+    background-image: url('../Images/jap.png');
+    width: 350px;
+    height: 350px;
+    background-size: cover;
+    border-radius : 10px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0,0.3);
+    
+}
+.ing{
+    background-image: url('../Images/eng.png');
+    width: 350px;
+    height: 350px;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0,0.3);
+
+}
+.kurjp{
+    background-image: url('../Images/kurjep.png');
+    width: 350px;
+    height: 350px;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0,0.3);
+}
+/*Tabs*/
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 .tabs {
     position: relative;   
-    min-height: 200px; /* This part sucks */
+    min-height: 1080px; /* This part sucks */
     clear: both;
-    margin: 120px 0;
+    margin: 60px 0;
     text-align: center;
     width: 100%
   }
@@ -106,9 +131,11 @@ header {
     position: absolute;
     top: 35px;
     left: 0;
+    align-items: center;
     background: white;
     right: 0;
     bottom: -100;
+    margin: auto;
     padding: 20px;
     border-top: 5px solid #3c8cf0; 
     text-align: left
@@ -124,93 +151,50 @@ header {
   }
   [type=radio]:checked ~ label ~ .content {
     z-index: 1;
-  }
-/*Selection*/
-.opt{
-    display: flex;
-    justify-content: space-evenly;
-    margin: auto;
-    width: 75%;
-    margin-top: 5%;
-    align-items: center;
-  }
-.jp{
-    background-image: url('../img/japan.png');
-    width: 350px;
-    height: 350px;
-    background-size: cover;
-    border-radius : 10px;
-    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0,0.3);
-    
 }
-.ing{
-    background-image: url('../img/Mandarin.png');
-    width: 350px;
-    height: 350px;
-    background-size: cover;
-    border-radius: 10px;
-    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0,0.3);
+/*JAE*/
+.tabtitle{
+    font-size: 30px;
+    color: #508cf0;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+.rowtitle{
+    font-size: 30px;
+    color: #508cf0;
+    font-family: "Roboto", sans-serif;
+}
+.isikai{
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 50px;
+  position: relative;
+}
+.row{
+  position: absolute;
+}
+.kaiback {
+  opacity: 0.2;
+}
+.column{
+  padding: 50px;
+  border: 5px solid #3c8cf0;
+  border-radius : 10px;
+  backdrop-filter: blur(5px);
+  font-size: 20px;
+  box-shadow: 0px 0px 5px #fff;
+  font-family: 'Rubik', sans-serif;
+  text-shadow: 
+-3px 0px 10px #FFF,
+3px 0px 10px #FFF,
+0px 0px 10px #FFF,
+-3px -3px 10px #FFF,
+3px -3px 10px #FFF,
+0px -3px 10px #FFF,
+-3px 3px 10px #FFF,
+3px 3px 10px #FFF,
+0px 3px 10px #FFF;
+}
+/*Kursus*/
 
-}
-.kurjp{
-    background-image: url('../img/Mandarin.png');
-    width: 350px;
-    height: 350px;
-    background-size: cover;
-    border-radius: 10px;
-    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0,0.3);
-}
-/*Screensize*/
-@media(max-width: 1500px) {
-    .opt{
-        margin-top: 10%;
-        width: 100%;
-    }
-    .jp{
-       display: inline-block; 
-       width: 300px;
-       height: 300px;
-    }
-    .ing{
-        display: inline-block;
-        width: 300px;
-       height: 300px;
-    }
-    
-    .kurjp{
-        display: inline-block;
-        width: 300px;
-       height: 300px;
-    }
-}
-@media (orientation: portrait){
-    .opt{
-        margin-top: 20%;
-        width: 100%;
-    }
-    .jp{
-       display: inline-block; 
-       width: 124px;
-       height: 124px;
-    }
-    .ing{
-        display: inline-block;
-        width: 124px;
-       height: 124px;
-    }
-    
-    .kurjp{
-        display: inline-block;
-        width: 124px;
-       height: 124px;
-    }
-    .tab label {
-    padding: 15px 25px;
-}
-.tab label:hover{
-  padding: 22px 25px;
-}
-[type=radio]:checked ~ label {
-  padding: 22px 25px; 
-}
-}
+/*Kontak*/
