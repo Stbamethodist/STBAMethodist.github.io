@@ -54,7 +54,7 @@ header {
     align-items: center;
   }
 .jp{
-    background-image: url('../images/jap.png');
+    background-image: url('../Images/jap.png');
     width: 350px;
     height: 350px;
     background-size: cover;
@@ -63,7 +63,7 @@ header {
     
 }
 .ing{
-    background-image: url('../images/eng.png');
+    background-image: url('../Images/eng.png');
     width: 350px;
     height: 350px;
     background-size: cover;
@@ -72,7 +72,7 @@ header {
 
 }
 .kurjp{
-    background-image: url('../images/kurjep.png');
+    background-image: url('../Images/kurjep.png');
     width: 350px;
     height: 350px;
     background-size: cover;
@@ -116,7 +116,7 @@ header {
     transition: all 0.3s ease 0s;
   }
   .tab label:hover{
-    background-image: url(../images/label.png);
+    background-image: url(../Images/label.png);
     background-repeat: no-repeat;
     padding: 25px 50px;
     color: white;
@@ -142,7 +142,7 @@ header {
   }
   [type=radio]:checked ~ label {
     padding: 25px 50px; 
-    background-image: url(../images/label.png);
+    background-image: url(../Images/label.png);
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
