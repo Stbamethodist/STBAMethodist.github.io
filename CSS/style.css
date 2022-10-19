@@ -10,8 +10,12 @@ body, html {
     height: 100%;
     margin: 0;
     font-family: Arial;
-    background-image: linear-gradient(to right, #f7fbff, #ebf5ff, #ebf5ff, #f7fbff);    
+    background-image: url(../Images/blue.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
+
 button {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -82,7 +86,14 @@ header {
 /*Tabs*/
 .column {
   float: left;
-  width: 50%;
+  width: 30%;
+  margin-bottom: 2%;
+  margin: 20px;
+}
+.vid {
+  float: left;
+  margin-bottom: 2%;
+  margin: 20px;
 }
 
 /* Clear floats after the columns */
@@ -90,10 +101,11 @@ header {
   content: "";
   display: table;
   clear: both;
+  
 }
 .tabs {
     position: relative;   
-    min-height: 1080px; /* This part sucks */
+    min-height: 800px; /* This part sucks */
     clear: both;
     margin: 60px 0;
     text-align: center;
