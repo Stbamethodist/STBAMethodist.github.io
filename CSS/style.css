@@ -6,8 +6,8 @@
     margin: 0;
     padding: 0;
 }
-body, html {
-    height: 100%;
+body, html{
+    height: 100vh;
     margin: 0;
     font-family: Arial;
     background-image: linear-gradient(to right, #f7fbff, #ebf5ff, #ebf5ff, #f7fbff);
@@ -24,9 +24,11 @@ button {
 .logo {
     cursor: pointer;
     margin-right: auto;
+    height: auto;
+    width: 23vh;
 }
 header {
-    height: 100px;
+    height: 8vh;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -50,14 +52,14 @@ header {
     display: flex;
     justify-content: space-evenly;
     margin: auto;
-    width: 75%;
+    width: 60%;
     margin-top: 2%;
     align-items: center;
   }
 .jp{
     background-image: url('../Images/jap.png');
-    width: 350px;
-    height: 350px;
+    width: 30vh;
+    height: 30vh;
     background-size: cover;
     border-radius : 10px;
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0,0.3);
@@ -65,8 +67,8 @@ header {
 }
 .ing{
     background-image: url('../Images/eng.png');
-    width: 350px;
-    height: 350px;
+    width: 30vh;
+    height: 30vh;
     background-size: cover;
     border-radius: 10px;
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0,0.3);
@@ -74,21 +76,28 @@ header {
 }
 .kurjp{
     background-image: url('../Images/kurjep.png');
-    width: 350px;
-    height: 350px;
+    width: 30vh;
+    height: 30vh;
     background-size: cover;
     border-radius: 10px;
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0,0.3);
 }
-/*Tabs*/
-.column {
+/*video*/
+.vid {
   float: left;
-  width: 30%;
   margin-bottom: 2%;
   margin: 20px;
 }
-.vid {
+.vid iframe{
+  top: 0;
+  left: 0;
+  width: 43vh;
+  height: 25vh
+}
+/*Tabs*/
+.column {
   float: left;
+  width: 50vh;
   margin-bottom: 2%;
   margin: 20px;
 }
@@ -96,15 +105,14 @@ header {
 /* Clear floats after the columns */
 .row:after {
   content: "";
-  display: table;
+  display: flex;
   clear: both;
-  
 }
 .tabs {
     position: relative;   
-    min-height: 800px; /* This part sucks */
+    min-height: 100vh; /* This part sucks */
     clear: both;
-    margin: 60px 0;
+    margin: 7vh 0;
     text-align: center;
     width: 100%
   }
@@ -114,7 +122,8 @@ header {
   }
   .tab label {
     background: white; 
-    padding: 20px 50px; 
+    font-size: 2vh;
+    padding: 1.5vh 5vh; 
     border: none; 
     margin-left: 0px; 
     position: relative;
@@ -127,7 +136,7 @@ header {
   .tab label:hover{
     background-image: url(../Images/label.png);
     background-repeat: no-repeat;
-    padding: 25px 50px;
+    padding: 2vh 5vh;
     color: white;
     background-size: cover;
     margin: auto;
@@ -138,7 +147,7 @@ header {
   }
   .content {
     position: absolute;
-    top: 35px;
+    top: 2vw;
     left: 0;
     align-items: center;
     background: white;
@@ -146,11 +155,11 @@ header {
     bottom: -100;
     margin: auto;
     padding: 20px;
-    border-top: 5px solid #3c8cf0; 
+    border-top: 0.6vh solid #3c8cf0; 
     text-align: left
   }
   [type=radio]:checked ~ label {
-    padding: 25px 50px; 
+    padding: 2vh 5vh; 
     background-image: url(../Images/label.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -163,13 +172,13 @@ header {
 }
 /*JAE*/
 .tabtitle{
-    font-size: 30px;
+    font-size: 3vh;
     color: #508cf0;
     text-align: center;
     font-family: "Roboto", sans-serif;
 }
 .rowtitle{
-    font-size: 30px;
+    font-size: 3vh;
     color: #508cf0;
     font-family: "Roboto", sans-serif;
 }
@@ -186,11 +195,12 @@ header {
   opacity: 0.2;
 }
 .column{
-  padding: 50px;
-  border: 5px solid #3c8cf0;
-  border-radius : 10px;
+
+  padding: 4vh;
+  border: 0.7vh solid #3c8cf0;
+  border-radius : 1vh;
   backdrop-filter: blur(5px);
-  font-size: 20px;
+  font-size: 2vh;
   box-shadow: 0px 0px 5px #fff;
   font-family: 'Rubik', sans-serif;
   text-shadow: 
@@ -207,3 +217,169 @@ header {
 /*Kursus*/
 
 /*Kontak*/
+.map{
+  align-items: center;
+  width: 50vh;
+  height: 20vh;
+}
+/*phone*/
+@media (orientation: portrait){
+  /* end of banner*/
+body, html{
+    height: 100vh;
+    margin: 0;
+    font-family: Arial;
+    background-image: linear-gradient(to right, #f7fbff, #ebf5ff, #ebf5ff, #f7fbff);
+}
+/*Header*/
+.logo {
+    cursor: pointer;
+    margin-right: auto;
+    height: auto;
+    width: 20vh;
+    
+}
+header {
+    height: 10vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 5px;
+    background-color: #ffffff;
+    box-shadow: 0 -6px 10px 5px rgba(0,0,0,0.5);
+}
+.topbot button{
+    padding: 9px 23px;
+    background-color: #1860af;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+}
+.topbot button:hover {
+    background-color: #86b0d9
+}
+      .opt{
+          margin-top: 5vh;
+          width: 100%;
+      }
+      .jp{
+         display: inline-block; 
+         width: 10vh;
+         height: 10vh;
+      }
+      .ing{
+          display: inline-block;
+          width: 10vh;
+         height: 10vh;
+      }
+      .kurjp{
+        display: inline-block;
+        width: 10vh;
+       height: 10vh;
+    }
+/*video*/
+.vid {
+  float: left;
+  margin-bottom: 2%;
+  margin: 1px;
+}
+.vid iframe{
+  width: 43vh;
+  height: 25vh;
+  margin-left: 5%;
+}
+/*Tabs*/
+.column {
+  float: left;
+  width: 45vh;
+  height: 45vh;
+  margin-bottom: 1vh;
+  margin: 1vh;
+}
+.column{
+  padding: 3vh;
+  border: 0.7vh solid #3c8cf0;
+  border-radius : 1vh;
+  backdrop-filter: blur(5px);
+  font-size: 1.5vh;
+  box-shadow: 0px 0px 5px #fff;
+  font-family: 'Rubik', sans-serif;
+  text-shadow: 
+-3px 0px 10px #FFF,
+3px 0px 10px #FFF,
+0px 0px 10px #FFF,
+-3px -3px 10px #FFF,
+3px -3px 10px #FFF,
+0px -3px 10px #FFF,
+-3px 3px 10px #FFF,
+3px 3px 10px #FFF,
+0px 3px 10px #FFF;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: flex;
+  clear: both;
+}
+    .tabs {
+        position: relative;   
+        min-height: 150vh; /* This part sucks */
+        clear: both;
+        margin: 5vh 0;
+        text-align: center;
+        width: 100%
+      }
+      .tab {
+        float: none;
+        display: inline-block
+      }
+      .tab label {
+        background: white; 
+        padding: 1.5vh 3vh; 
+        border: none; 
+        position: relative;
+        left: 0px; 
+        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0,0.3);
+        font-family: "Roboto", sans-serif;
+        color: #3c8cf0;
+        transition: all 0.3s ease 0s;
+      }
+      .tab label:hover{
+        background-image: url(../Images/label.png);
+        background-repeat: no-repeat;
+        padding: 2vh 3vh; 
+        color: white;
+        background-size: cover;
+        margin: auto;
+        width: 50%;
+      }
+      .tab [type=radio] {
+        display: none;   
+      }
+      .content {
+        position: absolute;
+        top: 3.5vh;
+        left: 0;
+        align-items: center;
+        background: white;
+        right: 0;
+        bottom: -100;
+        margin: auto;
+        padding: 20px;
+        border-top: 5px solid #3c8cf0; 
+        text-align: left
+      }
+      [type=radio]:checked ~ label {
+        padding: 2vh 3vh; 
+        background-image: url(../Images/label.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+        margin: auto;
+        width: 50%;
+      }
+      [type=radio]:checked ~ label ~ .content {
+        z-index: 1;
+    }
+  }  
