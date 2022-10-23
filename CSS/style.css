@@ -90,7 +90,7 @@ button {
 /*Start of Tabs*/
 .tabs {
     position: relative;   
-    min-height: 100vh; /* This part sucks */
+    min-height: 120vh; /* This part sucks */
     clear: both;
     margin: 7vh 0;
     text-align: center;
@@ -152,10 +152,7 @@ button {
 }
 /*end of Tabs*/
 /*Content universal Style*/
-.isi3{
-    text-align: center;
-    font-size: 3vh;
-}
+
 .row:after {
     content: "";
     display: flex;
@@ -239,6 +236,15 @@ button {
 }
 /*end of Kaigo Tab*/
 /*start of Kursus*/
+.kur1{
+    text-align: center;
+    font-size: 3vh;
+}
+.kur2{
+    font-size: 2vh;
+    margin: auto;
+    width: 50%;
+}
 .column2 {
     float: left;
     width: 50vh;
@@ -352,7 +358,7 @@ button {
 }
 /*end of tab*/
 /*start of collum JAE + Kursus*/
-.isi3{
+.kur1{
     text-align: center;
     font-size: 2vh;
 }
