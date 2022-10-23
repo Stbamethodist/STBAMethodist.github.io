@@ -8,19 +8,15 @@
 }
 body, html{
     height: 100vh;
+    width: auto;
     margin: 0;
     font-family: Arial;
-    background-image: linear-gradient(to right, #f7fbff, #ebf5ff, #ebf5ff, #f7fbff);
+    background-image: linear-gradient(rgb(215, 228, 248,0.9),rgba(255, 255, 255, 0.4)),url("../Images/34fa145390de7b245193b361b60e413a.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -20vh;
 }
-
-button {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: white;
-    text-decoration: none;
-}
-/*Header*/
+/*Start of Header*/
 .logo {
     cursor: pointer;
     margin-right: auto;
@@ -32,7 +28,7 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 30px 18px;
+    padding: 2vh 1.5vh;
     background-color: #ffffff;
     box-shadow: 0 -6px 10px 5px rgba(0,0,0,0.5);
 }
@@ -47,7 +43,15 @@ header {
 .topbot button:hover {
     background-color: #86b0d9
 }
-/*Selection*/
+button {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+/*end of Header*/
+/*start of Middle Cards*/
 .opt{
     display: flex;
     justify-content: space-evenly;
@@ -61,7 +65,7 @@ header {
     width: 30vh;
     height: 30vh;
     background-size: cover;
-    border-radius : 10px;
+    border-radius : 3vh;
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0,0.3);
     
 }
@@ -70,7 +74,7 @@ header {
     width: 30vh;
     height: 30vh;
     background-size: cover;
-    border-radius: 10px;
+    border-radius: 3vh;
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0,0.3);
 
 }
@@ -79,35 +83,11 @@ header {
     width: 30vh;
     height: 30vh;
     background-size: cover;
-    border-radius: 10px;
+    border-radius: 3vh;
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0,0.3);
 }
-/*video*/
-.vid {
-  float: left;
-  margin-bottom: 2%;
-  margin: 20px;
-}
-.vid iframe{
-  top: 0;
-  left: 0;
-  width: 43vh;
-  height: 25vh
-}
-/*Tabs*/
-.column {
-  float: left;
-  width: 50vh;
-  margin-bottom: 2%;
-  margin: 20px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: flex;
-  clear: both;
-}
+/*end of Middle Cards*/
+/*Start of Tabs*/
 .tabs {
     position: relative;   
     min-height: 100vh; /* This part sucks */
@@ -154,7 +134,7 @@ header {
     right: 0;
     bottom: -100;
     margin: auto;
-    padding: 20px;
+    padding: 2vh;
     border-top: 0.6vh solid #3c8cf0; 
     text-align: left
   }
@@ -170,40 +150,72 @@ header {
   [type=radio]:checked ~ label ~ .content {
     z-index: 1;
 }
-/*JAE*/
-.tabtitle{
-    font-size: 3vh;
-    color: #508cf0;
+/*end of Tabs*/
+/*Content universal Style*/
+.isi3{
     text-align: center;
-    font-family: "Roboto", sans-serif;
+    font-size: 3vh;
+}
+.row:after {
+    content: "";
+    display: flex;
+    clear: both;
+}
+.row2:after {
+    content: "";
+    display: flex;
+    clear: both;
 }
 .rowtitle{
     font-size: 3vh;
     color: #508cf0;
     font-family: "Roboto", sans-serif;
 }
-.isikai{
+.isi{
   display: flex;
   justify-content: space-evenly;
-  padding-top: 50px;
+  padding-top: 1vh;
   position: relative;
 }
+.isi2{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 1vh;
+    position: relative;
+  }
+.isimap{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 1vh;
+    position: relative;
+}
 .row{
-  position: absolute;
+    position: absolute;
+}
+/*end of Content universal Style*/
+/*start of Kaigo Tab*/
+.kaigotitle{
+    font-size: 3vh;
+    color: #508cf0;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
 }
 .kaiback {
   opacity: 0.2;
 }
-.column{
-
-  padding: 4vh;
-  border: 0.7vh solid #3c8cf0;
-  border-radius : 1vh;
-  backdrop-filter: blur(5px);
-  font-size: 2vh;
-  box-shadow: 0px 0px 5px #fff;
-  font-family: 'Rubik', sans-serif;
-  text-shadow: 
+.column1{
+    float: left;
+    width: 50vh;
+    margin-bottom: 2%;
+    margin: 20px;
+    padding: 4vh;
+    border: 0.7vh solid #3c8cf0;
+    border-radius : 1vh;
+    backdrop-filter: blur(5px);
+    font-size: 2vh;
+    box-shadow: 0px 0px 5px #fff;
+    font-family: 'Rubik', sans-serif;
+    text-shadow: 
 -3px 0px 10px #FFF,
 3px 0px 10px #FFF,
 0px 0px 10px #FFF,
@@ -214,172 +226,173 @@ header {
 3px 3px 10px #FFF,
 0px 3px 10px #FFF;
 }
-/*Kursus*/
-
-/*Kontak*/
-.map{
-  align-items: center;
-  width: 50vh;
-  height: 20vh;
+.vid {
+    float: left;
+    margin-bottom: 2%;
+    margin: 20px;
 }
-/*phone*/
+.vid iframe{
+    top: 0;
+    left: 0;
+    width: 43vh;
+    height: 25vh
+}
+/*end of Kaigo Tab*/
+/*start of Kursus*/
+.column2 {
+    float: left;
+    width: 50vh;
+    font-size: 2vh;
+    text-align: center;
+    padding: 2vh;
+    border: 0.7vh solid #3c8cf0;
+    border-radius : 1vh;
+    font-size: 2vh;
+    box-shadow: 0px 0px 5px #fff;
+    font-family: 'Rubik', sans-serif;
+    margin: 0.8vh;
+}
+.levels{
+    padding-top: 2vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15vh;
+}
+/*start of Kontak tab*/
+.column3 {
+    float: left;
+    width: 50vh;
+    margin-bottom: 2%;
+    margin: 20px;
+    font-size: 2vh;
+}
+/*end of Kontak tab*/
+/*Phone Screen*/
 @media (orientation: portrait){
-  /* end of banner*/
-body, html{
-    height: 100vh;
-    margin: 0;
-    font-family: Arial;
-    background-image: linear-gradient(to right, #f7fbff, #ebf5ff, #ebf5ff, #f7fbff);
-}
-/*Header*/
+    body, html{
+        width: 100vw;
+        height: auto;
+        background-size: 100vh;
+    }
+/*start of Header*/
 .logo {
     cursor: pointer;
     margin-right: auto;
     height: auto;
-    width: 20vh;
+    width: 20vh;   
+}
+/*end of header*/
+/*start of selection*/
+.opt{
+    margin-top: 5vh;
+    width: 100%;
+}
+.jp{
+   display: inline-block; 
+   width: 10vh;
+   height: 10vh;
+   border-radius : 1.5vh;
+}
+.ing{
+    display: inline-block;
+    width: 10vh;
+   height: 10vh;
+   border-radius : 1.5vh;
+}
+.kurjp{
+  display: inline-block;
+  width: 10vh;
+ height: 10vh;
+ border-radius : 1.5vh;
+}
+/*end of selection*/
+/*start of tab*/
+.tabs {
+    position: relative;   
+    min-height: 200vh; /* This part sucks */
+    margin: 5vh 0;
+  }
+  .tab {
+    float: none;
+    display: inline-block
+  }
+  .tab label {
+    background: white; 
+    padding: 1.5vh 3vh; 
+    border: none; 
+    position: relative;
+    left: 0px; 
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0,0.3);
+    font-family: "Roboto", sans-serif;
+    color: #3c8cf0;
+    transition: all 0.3s ease 0s;
+  }
+  .tab label:hover{
+    background-image: url(../Images/label.png);
+    background-repeat: no-repeat;
+    padding: 2vh 3vh; 
+    color: white;
+    background-size: cover;
+    margin: auto;
+    width: 50%;
+  }
+  .content {
+    position: absolute;
+    top: 3.5vh;
+    left: 0;
+    border-top: 5px solid #3c8cf0; 
+    text-align: left
+  }
+  [type=radio]:checked ~ label {
+    padding: 2vh 3vh; 
+  }
+  [type=radio]:checked ~ label ~ .content {
+    z-index: 1;
+}
+/*end of tab*/
+/*start of collum JAE + Kursus*/
+.isi3{
+    text-align: center;
+    font-size: 2vh;
+}
+.column1{
+    width: 43vh;
+    margin-bottom: 2%;
+    margin: 20px;
+    padding: 4vh;
+    border: 0.7vh solid #3c8cf0;
+    border-radius : 1vh;
+    backdrop-filter: blur(5px);
+    font-size: 2vh;
+}
+.column2{
+    width: 43vh;
+    margin-bottom: 2%;
+    margin: 20px;
+    padding: 1vh;
+    border: 0.7vh solid #3c8cf0;
+    border-radius : 1vh;
+    backdrop-filter: blur(5px);
+    font-size: 2vh;
+}
+.levels{
+    width: 50vh;
+    height: auto;
+}
+/*end of collum JAE + Kursus*/
+/*start of kontak*/
+.column3{
+    float: left;
+    width: 30vh;
+    margin: 20px;
+    height: auto;
     
 }
-header {
-    height: 10vh;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 10px 5px;
-    background-color: #ffffff;
-    box-shadow: 0 -6px 10px 5px rgba(0,0,0,0.5);
+.column3 iframe{
+    float: left;
+    width: 37vh;
+    height: auto;
+    
 }
-.topbot button{
-    padding: 9px 23px;
-    background-color: #1860af;
-    border: none;
-    cursor: pointer;
-    border-radius: 50px;
-    transition: all 0.3s ease 0s;
 }
-.topbot button:hover {
-    background-color: #86b0d9
-}
-      .opt{
-          margin-top: 5vh;
-          width: 100%;
-      }
-      .jp{
-         display: inline-block; 
-         width: 10vh;
-         height: 10vh;
-      }
-      .ing{
-          display: inline-block;
-          width: 10vh;
-         height: 10vh;
-      }
-      .kurjp{
-        display: inline-block;
-        width: 10vh;
-       height: 10vh;
-    }
-/*video*/
-.vid {
-  float: left;
-  margin-bottom: 2%;
-  margin: 1px;
-}
-.vid iframe{
-  width: 43vh;
-  height: 25vh;
-  margin-left: 5%;
-}
-/*Tabs*/
-.column {
-  float: left;
-  width: 45vh;
-  height: 45vh;
-  margin-bottom: 1vh;
-  margin: 1vh;
-}
-.column{
-  padding: 3vh;
-  border: 0.7vh solid #3c8cf0;
-  border-radius : 1vh;
-  backdrop-filter: blur(5px);
-  font-size: 1.5vh;
-  box-shadow: 0px 0px 5px #fff;
-  font-family: 'Rubik', sans-serif;
-  text-shadow: 
--3px 0px 10px #FFF,
-3px 0px 10px #FFF,
-0px 0px 10px #FFF,
--3px -3px 10px #FFF,
-3px -3px 10px #FFF,
-0px -3px 10px #FFF,
--3px 3px 10px #FFF,
-3px 3px 10px #FFF,
-0px 3px 10px #FFF;
-}
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: flex;
-  clear: both;
-}
-    .tabs {
-        position: relative;   
-        min-height: 150vh; /* This part sucks */
-        clear: both;
-        margin: 5vh 0;
-        text-align: center;
-        width: 100%
-      }
-      .tab {
-        float: none;
-        display: inline-block
-      }
-      .tab label {
-        background: white; 
-        padding: 1.5vh 3vh; 
-        border: none; 
-        position: relative;
-        left: 0px; 
-        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0,0.3);
-        font-family: "Roboto", sans-serif;
-        color: #3c8cf0;
-        transition: all 0.3s ease 0s;
-      }
-      .tab label:hover{
-        background-image: url(../Images/label.png);
-        background-repeat: no-repeat;
-        padding: 2vh 3vh; 
-        color: white;
-        background-size: cover;
-        margin: auto;
-        width: 50%;
-      }
-      .tab [type=radio] {
-        display: none;   
-      }
-      .content {
-        position: absolute;
-        top: 3.5vh;
-        left: 0;
-        align-items: center;
-        background: white;
-        right: 0;
-        bottom: -100;
-        margin: auto;
-        padding: 20px;
-        border-top: 5px solid #3c8cf0; 
-        text-align: left
-      }
-      [type=radio]:checked ~ label {
-        padding: 2vh 3vh; 
-        background-image: url(../Images/label.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        color: white;
-        margin: auto;
-        width: 50%;
-      }
-      [type=radio]:checked ~ label ~ .content {
-        z-index: 1;
-    }
-  }  
